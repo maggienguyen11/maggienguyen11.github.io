@@ -1,273 +1,901 @@
-<!DOCTYPE HTML>
-<!--
-	Maggie Nguyen web portfolio
--->
+<!doctype html>
 <html>
-	<head>
-		<title>Maggie Nguyen portfolio</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
-		<script src="js/init.js"></script>
-		
-		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-	</head>
-	<body>
-	<!-- Header -->
-			<div id="header" class="skel-panels-fixed">
-				<div class="top">
-					<!-- Logo -->
-					<div id="logo">
-						<span class="image maggie"><img src="images/MaggieProfile.jpg" alt="" /></span>
-						<h1 id="title">Maggie Nguyen, M.S</h1>
-						
-					</div>
-					<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#top" id="top-link" class="skel-panels-ignoreHref"><span class="icon icon-home">Intro</span></a></li>
-							<li><a href="#resume" target="_blank" class="skel-panels-ignoreHref"><span class="icon icon-th">Resume</span></a></li>
-							<li><a href="#portfolio" id="portfolio-link" class="skel-panels-ignoreHref"><span class="icon icon-th">Web Portfolios</span></a></li>
-							<li><a href="#multimedia" id="multimedia-link" class="skel-panels-ignoreHref"><span class="icon icon-th">Multimedia Projects</span></a></li>
-							
-							<li><a href="#about" id="about-link" class="skel-panels-ignoreHref"><span class="icon icon-user">About Me</span></a></li>
-							<li><a href="#contact" id="contact-link" class="skel-panels-ignoreHref"><span class="icon icon-envelope">Contact</span></a></li>
-							
-						</ul>
-					</nav>
-				</div>
-				
-				<div class="bottom">
-					<!-- Social Icons -->
-					<ul class="icons">
-						<li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
-						<li><a href="#" class="icon icon-facebook"><span>Facebook</span></a></li>
-						<!--<li><a href="#" class="icon icon-github"><span>Github</span></a></li> -->
-						<li><a href="#" class="icon icon-envelope"><span>Email</span></a></li>
-					</ul>
-				</div>
-			</div>
-		<!-- Main -->
-			<div id="main">
-				<!-- Intro -->
-				<section id="top" class="one">
-					<div class="container">
-						
-						<h3>Overview</h3>
-						<p>Master of Science in Educational Technology Leadership, Bachelor of Science in Graphic Design, Professional Study Certificate in Information System and over 10 years front end developer, graphic/web/multimedia designer experiences.</p>
-						
-						<h3>Areas of expertise</h3>
-						<p>◆ Front end developer
-							◆ Java Programmer 
-							◆ Web designer
-							◆ Digital designer
-							◆ Multinedia designer</p>
-						
-						<p>My experience is, in the front end stack (HTML, CSS), relevant front end libraries and frameworks (like jQuery, Bootstrap), and some back end exposure (Java, JSP), in Web Designer (Photoshop, Illustrator),  in  Multimedia Desiger (Flash, actionScript, iMovie, Quicktime Player), and in Graphic Design (inDesign, QuarkExpress)</p>
-						
-						<footer>
-							<a href="#portfolio" class="button scrolly">Maggie's Portfolio web site Click Here</a>
-						</footer>
-					</div>
-				</section>
-				<!-- Intro -->
+<head>
+<meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>Maggie Resume</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<link href="css/style.css" rel="stylesheet" type="text/css"> 
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+ 
+<!--[if lt IE 9]>
+    <script src="js/respond-1.1.0.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+<![endif]-->
+ 
+</head>
+<body>
+<header id="header">
+    <div id="head" class="parallax" parallax-speed="2" style="background-position: 50% 0px;">
+        <div class="top_left_cont zoomIn wow animated" id="logo"> 
+        <img class="img-circle" src="img/Maggie-Profile.jpg" alt="">
+        <h1>Maggie Nguyen, M.S. </h1><h1><strong>Web Developer & Designer</strong></h1>
+        <a href="#contact" class="read_more2">Contact Me!</a> </div>
+    </div>
+</header>
+<!--Header_section-->
+<header id="header_wrapper">
+    <div class="container">
+        <div class="header_box">
+        <!--<div class="logo"><a href="#">Resume</a></div>-->
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> 
+                    <span class="sr-only">Maggie Resume</span> 
+                    <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
+                </button>
+                </div>
+                <div id="main-nav" class="collapse navbar-collapse navStyle">
+                <ul class="nav navbar-nav" id="mainNav">
+                    <li class="active"><a href="index.html" class="scroll-link">Home</a></li>
+                    <li><a href="#expertise" class="scroll-link">Expertise</a></li> 
+                    <li><a href="#techSkills" class="scroll-link">Technical Skills</a></li>
+                    <li><a href="http://www.maggie-nguyen.com/" target="_blank" class="scroll-link">Portfolio</a></li> 
+                    <li><a href="#experience" class="scroll-link">Experience</a></li> 
+                    <li><a href="#education" class="scroll-link">Education</a></li> 
+                    <li><a href="#contact" class="scroll-link">Contact</a></li>
+                </ul>
+                </div>
+             </nav>
+        </div>
+    </div>
+</header>
+<!--Header_section--> 
+
+<section id="aboutUs"><!--Aboutus-->
+<div class="inner_wrapper about-us aboutUs-container fadeInLeft animated wow">
+    <div class="container">
+        <h2>OVERVIEW</h2>
+        <h6></h6>
+        <div class="inner_section">
+            <div class="row">
+                <div class="col-md-6"> 
+                    <img class="img-responsive" src="img/About-Maggie.jpg" align=""><br><br>
+                        <ul class="about-us-list">
+                            <li class="points">Master of Science in Educational Technology Leadership</li>
+                            <li class="points">Bachelor of Science in Graphic Design</li>
+                            <li class="points">Professional Study Certificate in Information System</li>
+                            <li class="">Skills in web/front-end developing and designing</li>
+                            <li class=""> Knowledge in Java programming.</li>
+                        </ul><!-- /.about-us-list -->
+                </div>
+                <div class="col-md-6">
                 
-				<section id="resume" class="two">
-					<div class="container">
-						
-						<h3>Maggie's resume</h3>
-						<p>This website is using Bootstrap</p>
-						<p>When you click on the button below, it will take you to my resume website.</p>
-						
-						<footer>
-							<a href="https://maggienguyen11.github.io/resume/" class="button scrolly">Maggie's resume web site Click Here</a>
-						</footer>
+                <h3>My Passion</h3>
+                <p>My background and focus is extensive in the field of web design
+                and front-end development and I have maintained a state of the art,
+                web technology and state of the art, well-rounded skill set that
+                has universal applications to a variety of industries. This has
+                developed and expanded my flexibility as a web designer and
+                front-end developer and grown my knowledge in this area.</p>
+                <!--
+                <p>My background is deeply rooted in the field of web design and front-end development, where I have consistently maintained a cutting-edge skill set in web technologies. This expertise is complemented by a well-rounded array of capabilities that are applicable across various industries. Such diversity has significantly enhanced my adaptability as a web designer and developer, continuously broadening my knowledge and expertise in this rapidly evolving field.</p>
+                -->
+                <p>I am committed to continuously learning code and programming, dedicating my free time to developing small personal projects, exploring technical articles online, and engaging with tutorials in new languages, frameworks, and programming tools. My passion for technology and continuous learning is the driving force behind my goal to enhance my professional expertise in computer science. To achieve this, I plan to successfully complete the Graduate Certificate in Information Science and Technology. This program will provide me with the advanced training and skills essential for my career progression. Beyond this, I aim to use this experience as a foundational step towards enrolling in the Information Science and Technology MS program, which will further elevate my academic and professional standing in the tech industry.</p>
+               
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+</section>
+<!--Aboutus--> 
+
+
+<!--Expertise-->
+<section  id="expertise">
+	<div class="container">
+		<h2>Expertise</h2>
+		<h6>Below are the areas of my Expertise</h6>
+		<div class="expertise_wrapper">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="expertise_icon delay-03s animated wow  zoomIn"> <span><i class="fa fa-cloud-upload"></i></span> </div>
+						<div class="expertise_block">
+							<h3 class="animated fadeInUp wow">Web Development</h3>
+							<p class="animated fadeInDown wow">The work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications (Web apps), electronic businesses, and social network services. </p>
+						</div>
 					</div>
-				</section>
-				<!-- Portfolio -->
-				<section id="portfolio" class="two">
-					<div class="container">
-						<header>
-							<h2>Portfolio</h2>
-						</header>
-							<div class="row">
-								<div class="4u">
-									<article class="item">
-										<a href="https://maggienguyen11.github.io/tictactoe/" class="image full"><img src="images/TicTacToe1.jpg" alt="" /></a>
-										<header>
-											<h3>Tic Tac Toe Game</h3>
-										</header>
-									</article>
-									
-								<article class="item">
-										<span class="image full"><a href="http://www.healthpartnersplans.com" class="image full"><img src="images/Healthpartnersplans.jpg" alt="" />
-										<header>
-											<h3>Health Partners Plans</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="http://www.maggie-nguyen.com/hppRecovery/" class="image full"><img src="images/HPPRecover.jpg" alt="" /></a>
-										<header>
-											<h3>Health Partners Plans, Disaster Recovery</h3>
-										</header>
-									</article>
-									
-								</div>
-								<div class="4u">
-								<article class="item">
-										<a href="https://maggienguyen11.github.io/NewWorldVisionCenterII/" class="image full"><img src="images/NewWorldVisionCenter.jpg" alt="" /></a>
-										<header>
-											<h3>New World Vision Center II</h3>
-										</header>
-									</article>
-									<article class="item">
-										<span class="image full"><a href="http://www.maggie-nguyen.com/philaFlooringSupply/" class="image full"><img src="images/philaFlooringSupply.jpg" alt="" />
-										<header>
-											<h3>Phila Flooring Supply</h3>
-										</header>
-									</article>
-									<article class="item">
-										<span class="image full"><a href="http://neurology.ucla.edu" class="image full"><img src="images/UCLA.jpg" alt="" />
-										<header>
-											<h3>University of California, Department of Neurology</h3>
-										</header>
-									</article>
-									
-									
-								</div> 
-								<div class="4u">
-									<article class="item">
-										<a href="http://www.maggie-nguyen.com/greenMasterCleaning/" class="image full"><img src="images/GreenMaster.jpg" alt="" /></a>
-										<header>
-											<h3>Green Master Cleaning</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="http://www.maggie-nguyen.com/laNailSpa/" class="image full"><img src="images/LANailSpa.jpg" alt="" /></a>
-										<header>
-											<h3>LA Nail Spa</h3>
-										</header>
-									</article>
-									
-									<article class="item">
-										<span class="image full"><a href="https://www.frys.com" class="image full"><img src="images/frys.jpg" alt="" />
-										<header>
-											<h3>FRYS.com</h3>
-										</header>
-									</article>
-									
-								</div>
-							</div>
-
-						</div>
-					</section>
-					<!-- Multimedia -->
-				<section id="multimedia" class="two">
-					<div class="container">
-						<header>
-							<h2>Multimedia Projects</h2>
-						</header>
-							<div class="row">
-								<div class="4u">
-									<article class="item">
-										<a href="multimedia/neuroMovie/neuroMovie.html" class="image full"><img src="images/NeuroMovie.jpg" alt="" /></a>
-										<header>
-											<h3>Neurology Movie</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="http://www.maggie-nguyen.com/myGraphicDesign/" class="image full"><img src="images/myGraphicDesign1.jpg" alt="" /></a>
-										<header>
-											<h3>Graphic Design Slide Show</h3>
-										</header>
-									</article>
-								</div> 
-								<div class="4u">
-								<article class="item">
-										<a href="http://www.maggie-nguyen.com/multimedia/contributions/" class="image full"><img src="images/DonationFlower.jpg" alt="" /></a>
-										<header>
-											<h3>Donation</h3>
-										</header>
-									</article>
-								</div> 
-							</div>
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>About Maggie</h2>
-							</header>
-							
-							
-<p>I was a Web Designer/Front End Developer at Health Partner Plans, a managed care organization in Philadelphia. In my role, I had successfully completed many projects in a timely manner from start to launch. Some of the projects I had completed include a re-design and re-structure the internet and intranet company websites; by creating a vibrant new design and transferred to front-end using HTML, CSS, jQuery and JavaScript. Also, I had developed Search Engine and Search Engine Optimization strategies and had participated in design and development plans for the restructure of the organization intranet site with design capabilities to improve the user interface design.</p>
-
-<p>Prior to Health Partners Plans, I was a programmer Analyst II. Also, I had served as a Web Master at University of California, Los Angeles, Department of Neurology in Los Angeles, California. My roles included the designing and development the departments internet and intranet sites, and assisting in monitoring the sites to keep content and technology current. The technologies I used were HTML, CSS, JSP and JavaScripts. I worked with a back-end programmer and a manager to develop and enhance usability. I completed the design and fully developed the departmental website with overwhelming satisfactions and exceeded the Chairman’s and faculty’s high requirements and expectations. I was the recipient of University of California, Los Angeles, Department of Neurology Chairman’s outstanding recognition and acknowledgment for design and development for the website, http://www.neurology.ucla.edu.</p>
-
-<p>My Passion: "I am committed to continuously learning code and programming, dedicating my free time to developing small personal projects, exploring technical articles online, and engaging with tutorials in new languages, frameworks, and programming tools. My passion for technology and continuous learning is the driving force behind my goal to enhance my professional expertise in computer science. To achieve this, I plan to successfully complete the Graduate Certificate in Information Science and Technology. This program will provide me with the advanced training and skills essential for my career progression. Beyond this, I aim to use this experience as a foundational step towards enrolling in the Information Science and Technology MS program, which will further elevate my academic and professional standing in the tech industry."</p>
-
-						</div>
-					</section>
-			
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<form method="post" action="#">
-								<div class="row half">
-									<div class="6u"><input type="text" class="text" name="name" placeholder="Name" /></div>
-									<div class="6u"><input type="text" class="text" name="email" placeholder="Email" /></div>
-								</div>
-								<div class="row half">
-									<div class="12u">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<div class="12u">
-										<a href="#" class="button submit">Send Message</a>
-									</div>
-								</div>
-							</form>
-
-						</div>
-					</section>
-			
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
 				
-				<!-- Copyright -->
-					<div class="copyright">
-						<p>&copy; 2017 Maggie Nguyen. All rights reserved.</p>
-						<ul class="menu">
-							<li>Design: <a href="http://maggie-nguyen.com">Maggie Nguyen</a></li>
-							<li>Images: <a href="#">Shenneth Dove-Morse</a></li>
+				<div class="col-md-3"> 
+					<div class="expertise_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-crosshairs"></i></span> </div> 
+						<div class="expertise_block">
+							<h3 class="animated fadeInUp wow">Designing</h3>
+							<p class="animated fadeInDown wow">Encompasses many different skills and disciplines in the production and maintenance of websites. Web design include web graphic design; user interface design (UI design); authoring, including standardised code and proprietary software; user experience design (UX design); and search engine optimization. </P>
+						</div>
+					</div>
+				
+				<div class="col-md-3">
+					<div class="expertise_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-html5"></i></span> </div>
+						<div class="expertise_block">
+							<h3 class="animated fadeInUp wow">Front-end Programming</h3>
+							<p class="animated fadeInDown wow">The practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data. Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly.</p>
+						</div>
+					</div>
+				<div class="col-md-3">
+					<div class="expertise_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-code"></i></span> </div>
+						<div class="expertise_block">
+							<h3 class="animated fadeInUp wow">Java Programming</h3>
+							<p class="animated fadeInDown wow">A class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let application developers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. </p>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+</section>
+<!--expertise--> 
+<section id="techSkills">
+	<div class="container">
+	<h2>Technical Skills</h2>
+		<div class="row"> 
+			<div class="col-sm-6 col-md-6">
+			<p>Knowledge and experience utilizing Object Oriented Programming (OOP)</p>
+			<p>Skilled in JavaScript, CSS, and HTML</p>
+			<p>Skilled Java Programming</p>
+			</div>
+			<div class="col-sm-6 col-md-6">
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+						<span class="sr-only">80% Complete</span>
+					</div>
+						<span class="progress-type">HTML / HTML5</span>
+						<span class="progress-completed">80%</span>
+				</div>
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+						<span class="sr-only">70% Complete</span>
+					</div>
+						<span class="progress-type">bootstrap</span>
+						<span class="progress-completed">70%</span>
+				</div>
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+						<span class="sr-only">80% Complete</span>
+					</div>
+						<span class="progress-type">CSS</span>
+						<span class="progress-completed">80%</span>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+						<span class="sr-only">75% Complete (success)</span>
+					</div>
+						<span class="progress-type">JavaScript</span>
+						<span class="progress-completed">75%</span>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+						<span class="sr-only">50% Complete (success)</span>
+					</div>
+						<span class="progress-type">React</span>
+						<span class="progress-completed">50%</span>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+						<span class="sr-only">75% Complete (info)</span>
+					</div>
+						<span class="progress-type">Java</span>
+						<span class="progress-completed">75%</span>
+					</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+						<span class="sr-only">50% Complete (success)</span>
+					</div>
+						<span class="progress-type">JQuery</span>
+						<span class="progress-completed">50%</span>
+					</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+						<span class="sr-only">25% Complete (warning)</span>
+					</div>
+						<span class="progress-type">Python</span>
+						<span class="progress-completed">25%</span>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+						<span class="sr-only">25% Complete (danger)</span>
+					</div>
+						<span class="progress-type">PHP</span>
+						<span class="progress-completed">25%</span>
+					</div>
+				</div>
+			</div>
+		<div>
+	<div>
+</section>
+
+<!--/Experience --> 
+<section id="experience">
+	<div class="container">
+		<h2>Work Experiences</h2>
+		<div class="timeline">
+            <div class="date-title">
+                <span>Temple University - Current</span>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 news-item">
+                    <div class="news-content">
+                        <div class="date">
+                           <!-- <p>June</p>
+                            <p>2022</p> -->
+                        </div>
+                       
+                        <h2 class="news-title">Temple University</h2>
+                        <h2 class="news-title">Graphic Design Specialist</h2>
+                        <span>Philadelphia, Pennsylvania</span>
+                        <p>June 2022 – Current</p>
+                        <p>At Temple University's iGEM, I am deeply engaged in creating compelling visual representations of complex scientific data, collaborating closely with faculty and Dr. Sudhir Kumar. My role involves:</p>
+                        
+                    </div>
+                </div>
+               
+                <div class="col-sm-6 news-item right">
+                    <div class="news-content">
+                        <div class="date">
+                           <!-- <p>June</p>
+                            <p>2022</p> -->
+                        </div>
+                        <h3>Scientific Communication through Design:</h3>
+                        <p> <p>Translating intricate computationally-based biological concepts into clear, engaging graphics and materials for both academic and general audiences.</p></p>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6 news-item right">
+                    <div class="news-content">
+                        <div class="date">
+                                <p></p>
+                                <p></p>
+                        </div>
+                            <h2 class="news-title"></h2>
+                            <span></span>
+                            
+                        <h3>Strategic Visual Conceptualization:</h3>
+                        <p>Developing strategies to convey complex ideas in accessible formats, enhancing the understanding and visibility of the institute’s scientific endeavors.</p>
+                            
+                    </div>
+                </div>
+                <div class="col-sm-6 news-item ">
+                    <div class="news-content">
+                        <div class="date">
+                           <!-- <p>June</p>
+                            <p>2022</p> -->
+                        </div>
+                        <h3>Multimedia Design and Production:</h3>
+                        <p>Specializing in multimedia design, including illustrations, conceptual designs, and graphics preparation for scientific publications, videos, and educational projects.</p>
+                        <p>I am able to maintain and update multiple websites for the departments using
+                        Linux and communicate effectively with computational experts to facilitate
+                        their work as well as the institutes</p>
+                       
+                    </div>
+                </div>
+                <div class="col-sm-6 news-item right">
+                    <div class="news-content">
+                        <div class="date">
+                                <p></p>
+                                <p></p>
+                        </div>
+                            <h2 class="news-title"></h2>
+                            <span></span>
+                            <h3>Advanced Web Development Skills:</h3>
+                            <p>Handling web design and editing tasks with proficiency in PHP, JavaScript, jQuery, React, HTML, XML, and CSS. My responsibilities include updating and maintaining departmental websites, aligning with faculty requirements and technical standards.</p>
+                            
+                     </div>
+                </div>
+                
+                <div class="col-sm-6 news-item">
+                    <div class="news-content">
+                        <div class="date">
+                                <p></p>
+                                <p></p>
+                        </div>
+                            <h2 class="news-title"></h2>
+                            <span></span>
+                            <h3>Effective Multi-Project Management:</h3>
+                            <p>Juggling multiple projects simultaneously, ensuring all departmental websites are current, functional, and user-friendly.</p>
+                            
+                     </div>
+                </div>
+                
+                <div class="col-sm-6 news-item right">
+                    <div class="news-content">
+                        <div class="date">
+                                <p></p>
+                                <p></p>
+                        </div>
+                            <h2 class="news-title"></h2>
+                            <span></span>
+                            <h3>Linux System and Collaborative Communication:</h3>
+                            <p>Managing multiple websites using Linux and communicating effectively with computational experts to support their work and the institute's goals.</p>
+                            
+                     </div>
+                </div>
+                
+                <div class="col-sm-6 news-item">
+                    <div class="news-content">
+                        <div class="date">
+                                <p></p>
+                                <p></p>
+                        </div>
+                            <h2 class="news-title"></h2>
+                            <span></span>
+                            <h3>Team Collaboration and Technical Solution Implementation: </h3>
+                            <p>Working continuously within a team environment to develop and implement web development solutions that meet current technical standards and environmental constraints.</p>
+                            
+                     </div>
+                </div>
+                
+                <div class="col-sm-6 news-item right">
+                    <div class="news-content">
+                        <div class="date">
+                                <p></p>
+                                <p></p>
+                        </div>
+                            <h2 class="news-title"></h2>
+                            <span></span>
+                            <h3>Proactive Learning and SEO Implementation: </h3>
+                            <p>Actively learning new technologies and implementing search engine optimization for the Genomic Medicine website (https://igem.temple.edu/genomicmed/).</p>
+                            
+                     </div>
+                </div>
+                
+                <div class="col-sm-6 news-item">
+                    <div class="news-content">
+                        <div class="date">
+                                <p></p>
+                                <p></p>
+                        </div>
+                            <h2 class="news-title"></h2>
+                            <span></span>
+                            <h3>Diverse Experience and Adaptability:</h3>
+                            <p>My extensive background in web design and front-end development, coupled with a state-of-the-art skill set, has broad applications across various industries. This diversity has enhanced my flexibility as a designer and developer, continually expanding my expertise in this domain.</p>
+                            
+                     </div>
+                </div>
+                
+                <div class="col-sm-6 news-item right">
+                    <div class="news-content">
+                        <div class="date">
+                                <p></p>
+                                <p></p>
+                        </div>
+                            <h2 class="news-title"></h2>
+                            <span></span>
+                            <p>In my current role at Temple University, I leverage my extensive experience in graphic design and front-end development to effectively communicate complex scientific concepts, contributing significantly to the institute’s educational and research missions.</p>
+                            
+                            <a class="read-more" href="#">Read More</a></p></p>
+                     </div>
+                </div>
+                
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="date-title">
+				<span>OPEX Corporation: Mar 2020 - Dec 2020</span>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 news-item">
+					<div class="news-content">
+						<h2 class="news-title">OPEX Corporation</h2>
+						<h2 class="news-title">Web & Graphic Designer</h2>
+						<span>Moorestown, New Jersey</span>
+						<p>March 2020 – December 2020</p>
+					</div>
+				</div>
+				<div class="col-sm-6 news-item right">
+					<div class="news-content">
+						<div class="date">
+								<p></p> 
+								<p></p> 
+						</div>
+							<h2 class="news-title"></h2> 
+							<span></span>
+                            <h3>User Experience Enhancement: </h3>
+							<p>Focused on enhancing the user experience by designing an intuitive site structure, seamless navigation, page optimization, and integrating visually appealing graphics. This led to the achievement of webpage objectives and an improved overall user experience.</p>
+					</div>
+				</div>
+                <div class="col-sm-6 news-item">
+                    <div class="news-content">
+                        <h3>Functional Improvements: </h3>
+                        <p>Implemented strategic enhancements that significantly improved web functionality and user interaction.</p>
+                        
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 news-item right">
+                    <div class="news-content">
+                        <h3>Development of Foreign Language Websites: </h3>
+                        <p>Created foreign language versions of the websites, mirroring the content and design of the existing English site, to provide a consistent user experience for non-English speaking audiences.</p>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 news-item">
+                    <div class="news-content">
+                        <h3>Collaboration with Marketing and Design Teams: </h3>
+                        <p>Worked closely with the Marketing Department and product design teams. Responsible for the development and maintenance of web content, digital marketing materials, and platforms for engaging with OPEX’s worldwide audience. This included management of the company’s website, blogs, social media groups, and video channels, ensuring a cohesive digital presence.</p>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 news-item right">
+                    <div class="news-content">
+                        <p>In my role at OPEX Corporation, I utilized my comprehensive skills in web development and design to enhance the company’s digital footprint, significantly contributing to its global outreach and marketing initiatives.</p>
+                        <a class="read-more" href="#">Read More</a>
+                    </div>
+                </div>
+			</div>
+            
+            
+            
+            
+            
+            
+			<div class="date-title">
+				<span>Coaching and Tutoring - Freelancer - Continued Education</span>
+			</div>
+			<div class="row">
+                <div class="col-sm-6 news-item">
+                    <div class="news-content">
+                        <div class="date">
+                            <p>Aug</p>
+                            <p>2016</p>
+                            <p>to</p>
+                            <p>Aug</p>
+                            <p>2018</p>
+                        </div>
+                        <h2 class="news-title">Coaching and Tutoring</h2>
+                        <span></span>
+                        <p>August 2016 – June 2018</p>
+                        <ul>
+                            <li>I embraced the dual role of a tutor and personal development coach, as well as a host, for three international high school juniors. My responsibilities included delivering instruction in English and Mathematics, and mentoring in effective project presentation skills. Concurrently, I guided them through their cultural transition, aiding their adaptation to a new educational and social environment. Additionally, my role encompassed hosting these students, providing them with a nurturing and immersive living experience. This aspect of my work was instrumental in enhancing their assimilation, boosting their self-confidence, and deepening their understanding of local culture and customs.
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+				<div class="col-sm-6 news-item right">
+					<div class="news-content">
+						<div class="date">
+							<p>Jan</p> 
+							<p>2017</p> 
+						</div>
+						<h2 class="news-title">Freelancer</h2> 
+						<span>Developed/designed a responsive website that
+utilized the latest technology with CSS3, HTML5, jQuery and bootstrap</span>
+						<p>January 2017 – December 2019</p>
+						<ul>
+							<!--<li>New World Vision Center II, Philadelphia, PA</li>  -->
+							<li>NewWorldVisionCenter2.com</li>
+							<!--<li>Green Master Cleanning, San Jose, CA</li> -->
+							<li>GreenMasterCleaning.com</li>
+							<!--<li>LA Nail Spa, Philadelphia, CA</li>
+							<li>maggie-nguyen/LaNailSpa/</li> -->
+                            <!--
+							
+							<li>From August 2016 to June 2018, I undertook the dual role of a tutor and personal development coach, as well as a host, for three international high school juniors. In addition to providing instruction in English and Mathematics and guiding them in project presentation techniques, I facilitated their cultural transition and adaptation to a new educational environment. My role also extended to hosting these students, offering them a supportive and immersive living experience, which further enhanced their understanding and integration into the local culture and customs.</li>
+							-->
 						</ul>
+						
 					</div>
-				
+				</div>
+                
+                <div class="col-sm-6 news-item right">
+                    <div class="news-content">
+                        <div class="date">
+                            <p>Aug</p>
+                            <p>2018</p>
+                        </div>
+                        <h2 class="news-title">Continued Education</h2>
+                        <span>Web Technologies Course, Villanova University, PA</span>
+                        <ul>
+                            <li>Explored various state-of-the-art web technologies, focusing on web
+standards, architectural models, and site design and accessibility issues. Both client-side and server-side technologies were investigated</li>
+<li>Conducted in a seminar format and focused on the server side
+technologies, covering selected topics such as Ruby on Rail, AJAX,
+responsive web design and other newer web technoloies such as PHP,
+Python and more
+                            </li>
+                        </ul>
+                        <p>August 2016 – December 2016</p>
+                        <a class="read-more" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+			<div class="date-title">
+				<span>Health Partner Plans</span>
 			</div>
+			<div class="row">	
+				<div class="col-sm-6 news-item">
+					<div class="news-content">
+						<div class="date">
+							<p>Nov</p> 
+							<p>2008</p> 
+						</div>
+							<h2 class="news-title">Web Designer - Front-End Web Developer</h2>
+							<span>Health Partners Plans, Philadelphia, PA</span>
+							<p>November 2008 - August 2016</p>
+                            
+                            <h3></h3>
+                            <p></p>
+                            
+                            
+                            <h3>Comprehensive Web Development:</h3>
+                            <p>Spearheaded the development, maintenance, and support for all of the company’s external and internal websites, ensuring optimal functionality and user experience.</p>
+                            
+                            
+                            <h3>Creative Design and Front-End Development: </h3>
+                            <p>Successfully completed a new design in Photoshop (PSD) and translated it into front-end code using HTML, CSS, and JavaScript, contributing to a major redesign of the Health Partners websites.</p>
+                            
+                            
+                            
+                            <h3>Responsive Web Design: </h3>
+                            <p>Innovatively designed and developed a responsive website for the company’s Disaster Recovery site, utilizing CSS3, HTML5, and jQuery. This project was part of a rebranding initiative and focused on providing an optimal viewing experience across various devices.</p>
+                        
+                            
+                            <h3>Interdepartmental Collaboration:</h3>
+                            <p>Worked closely with various teams within the organization to enhance the visual appeal and functionality of the company websites, ensuring alignment with organizational goals and user needs.</p>
+                            
+                            <h3>Website Management and Optimization: </h3>
+                            <p>Managed and updated the websites using ASP, HTML/DHTML, and JavaScript for both internet and intranet sites, ensuring content was current and engaging. Also developed and implemented a Search Engine Optimization (SEO) strategy to increase the company's online visibility.</p>
+                            
+                            <h3>URL Redirection and Site Migration: </h3>
+                            <p>Managed JavaScript to redirect over 200 URLs to new ones, preventing broken links during the transition to new sites and servers. Independently maintained and updated all web pages, seamlessly migrating content from the existing to the new Health Partners website.</p>
+                            
+                            <h3>Content Development in Collaboration with Marketing: </h3>
+                            <p>Collaborated with the Marketing division and other departments to develop and integrate relevant, valuable content for users and stakeholders, enhancing the website’s effectiveness as a communication tool.</p>
+                            
+                            <h3>Recognition for Outstanding Performance:</h3>
+                            <p>Honored as the “Kudo” 2009 recipient by Health Partners Plans, Department of Marketing and Communication, for outstanding performance in redesigning and restructuring the company’s website.</p>
+                            
+                           
+                            <p>In my tenure at Health Partners Plans, I combined my technical web development skills with a keen eye for design and user experience, significantly contributing to the company's digital presence and internal communications efficiency.</p>
+                            
+                            
+                            
+                            
+                           
+					</div>
+				</div>
+				<div class="col-sm-6 news-item right">
+					<div class="news-content">
+						<div class="date">
+							<p></p> 
+						</div>
+						<h2 class="news-title"></h2> 
+						<span></span>
+                        <h3>Website Management and Optimization:</h3>
+                        <p>Managed and updated the websites using ASP, HTML, and JavaScript for both internet and intranet sites, ensuring content was current and engaging. Also developed and implemented a Search Engine Optimization (SEO) strategy to increase the company's online visibility.</p>
+                        
+                        
+                        <h3>RL Redirection and Site Migration: </h3>
+                        <p>Managed JavaScript to redirect over 200 URLs to new ones, preventing broken links during the transition to new sites and servers. Independently maintained and updated all web pages, seamlessly migrating content from the existing to the new Health Partners website.</p>
+                        
+                        
+                        <h3>Content Development in Collaboration with Marketing:</h3>
+                        <p>Collaborated with the Marketing division and other departments to develop and integrate relevant, valuable content for users and stakeholders, enhancing the website’s effectiveness as a communication tool.</p>
+                        
+                        
+                        <h3>Recognition for Outstanding Performance:</h3>
+                        <p>Honored as the “Kudo” 2009 recipient by Health Partners Plans, Department of Marketing and Communication, for outstanding performance in redesigning and restructuring the company’s website.</p>
+                        
+                        
+                        <p>In my tenure at Health Partners Plans, I combined my technical web development skills with a keen eye for design and user experience, significantly contributing to the company's digital presence and internal communications efficiency.</p>
+                        </p>
+                        
+                        <a class="read-more" href="#"></a>
+					</div>
+				</div>
+			</div>
+			<div class="date-title">
+				<span>UCLA Health, Department of Neurology, Los Angeles, CA</span>
+			</div>
+			<div class="row">	
+				<div class="col-sm-6 news-item">
+					<div class="news-content">
+						<div class="date">
+							<p>Dec</p> 
+							<p>2005</p>
+						</div>
+						<h2 class="news-title">Programmer Analyst II/Web Master</h2> 
+							<span>UCLA Health, Department of Neurology, Los Angeles, CA</span>
+							<p>December 2005 – April 2009</p>
+                            
+                            <h3>Award-Winning Website Development and Design:</h3>
+                            <p>Led the design and development of both the external and internal websites for the UCLA Department of Neurology. This included the public-facing departmental website (www.neurology.ucla.edu) and the internal Faculty Assistance Centralized Tools System (FACTS) for faculty and staff use. My work in both areas was recognized with the "2007 Chairman’s Recognition and Acknowledgment" for excellence in website development and design.</p>
+                     </div>
+				</div>
+				<div class="col-sm-6 news-item right">
+					<div class="news-content">
+						<div class="date">
+							<p></p> 
+						</div>
+							<h2 class="news-title"></h2> 
+							<span></span>
+                            
+                            <h3>Redesign and Maintenance of Internal Systems:</h3>
+                            <p> Successfully redesigned and maintained the internal website for the UCLA Department of Neurology’s Faculty Assistance Centralized Tools System (FACTS), enhancing usability and functionality for faculty members.</p>
+                            
+                            
+                            <h3>Innovative Multimedia Implementation: </h3>
+                            <p>Created engaging multimedia flash animations for the departmental website, significantly enhancing user interaction and effectively conveying complex neurological concepts.</p>
+                            
+                            <h3>From Concept to Online Presence:</h3>
+                            <p>Developed the departmental website from the ground up, transforming the Chairman-approved designs into a sophisticated, user-friendly online platform.</p>
+                            
+                      </div>
+				</div>
+                <div class="col-sm-6 news-item">
+                    <div class="news-content">
+                        <!--
+                        <div class="date">
+                           <p>Dec</p>
+                            <p>2005</p>
+                        </div>
+                        -->
+                        <h3>Content Management and Update:</h3>
+                        <p>Actively contributed to keeping the website content current, ensuring it accurately reflected the department's dynamic activities and advancements.</p>
+                        
+                        
+                        <h3>Collaboration and Technical Integration:</h3>
+                        <p>Collaborated closely with technical teams, ensuring seamless integration of front-end design with back-end technologies, leading to an optimal and cohesive website experience.</p>
+                        
+                     </div>
+                </div>
+                
+                <!-- RIGHT -->
+                <div class="col-sm-6 news-item right">
+                    <div class="news-content">
+                        <div class="date">
+                            <p></p>
+                        </div>
+                            <h2 class="news-title"></h2>
+                            <span></span>
+                            <p>In my role at UCLA Health's Department of Neurology, I leveraged my extensive skills in web development, design, and multimedia, making a significant impact on both the department’s external online presence and internal operational efficiency, as acknowledged by the 2007 Chairman’s accolade.</p>
+                            <a class="read-more" href="#">Read More</a>
+                      </div>
+                </div>
+			</div>
+        </div>
+</section> 
+<!--/Education -->
+<section id="education">
+	<div class="container">
+		<div class="row">
+		<h2>Education</h2>
+			<div class="timeline-centered">
+				<article class="timeline-entry">
+				<div class="timeline-entry-inner">
+					<div class="timeline-icon bg-warning">
+						<i class="entypo-camera"></i>
+					</div>
+					<div class="timeline-label">
+						<h3 class="resume-title">GRADUATE STUDENT AT TEMPLE UNIVERSITY - CURRENT</h3>
+						<h4>INFORMATION SYSTEM AND TECHNOLOGY CERTIFICATE</h4> 
+						<p>"My goal is to advance my professional expertise in computer science by successfully completing the Graduate Certificate in Information Science and Technology. This program will equip me with the advanced training and skills necessary for career progression. Additionally, I aim to leverage this opportunity as a stepping stone towards enrolling in the Information Science and Technology MS program, further enhancing my academic and professional qualifications in this field."</P></BR>
+                    <h3 class="resume-title">RELEVANT COURSES</h3> 
+<h4>Programming Technique</h4>
+<h4>Data Structure and Object, Java Programing</h4>
+<h4>Database Design, SQL and Oracle</h4>
+					</div>
+				</div>
+			</article>
+			<article class="timeline-entry">
+				<div class="timeline-entry-inner">
+					<div class="timeline-icon bg-success">
+					<i class="entypo-feather"></i>
+					</div>
+					<div class="timeline-label">
+						<h3 class="resume-title">CERTIFICATE IN INFORMATION SYSTEM - 2016</h3> 
+						<h4 class="resume-title">Villanova University, Villanova, PA</h4>  
+						<p>Achieved a comprehensive understanding of information systems and technologies, encompassing core principles in computer science, algorithms, data structures, discrete mathematics, and computer systems.</p></BR>
+                        <h3 class="resume-title">COURSES TAKEN</h3> 
+						<h4>Web Technologies</h4>
+						<p>Delved into cutting-edge web technologies with a focus on web standards, architectural models, and issues in site design and accessibility. Emphasized both client-side and server-side technologies. The course was conducted in a seminar format, primarily concentrating on server-side technologies and covering an array of topics such as Ruby on Rails, AJAX, responsive web design, PHP, Python, and other modern web technologies.</p></BR>
+                    <h4>Discrete Mathematic</h4>
+                    <p>Gained a solid grounding in the mathematical foundations relevant to computer science, enhancing analytical and problem-solving skills.</p></BR>
+<h4>Data Structure and Algorithms, Java Programing I, II, III</h4>
+<P>Progressed through a series of increasingly advanced courses in Java programming, focusing on the development and implementation of efficient algorithms and data structures. The sequence of courses provided an in-depth understanding of algorithmic design and the intricacies of Java programming.</P>
+					</div>
+				</div>
+			</article>
+			<article class="timeline-entry">
+				<div class="timeline-entry-inner">
+					<div class="timeline-icon bg-secondary">
+						<i class="entypo-suitcase"></i>
+					</div>
+					 <div class="timeline-label">
+						<h3 class="resume-title">MASTER OF SCIENCE IN EDUCATIONAL TECHNOLOGY LEADERSHIP - 2003</h3>
+						<h4 class="resume-title">California State University, East Bay, Hayward, CA</h4>
+                        
+						<p>This esteemed program empowered me with a multifaceted understanding of educational technology, laying the foundation for my aspiration to become a professor. The curriculum was thoughtfully designed to encompass both the theoretical and practical aspects of technology in education. Key aspects of my study include:</p></BR>
+                        
+                        
+                        <h4>Robust Foundations in Educational Technology:</h4>
+                        <p>Acquired a deep understanding of the principles and applications of educational technology, essential for effective teaching and impactful research in academia.</p></BR>
+                        
+                        
+                        <h4>Instructional Design Mastery:</h4>
+                        <p>Gained expertise in various instructional design theories, enhancing my capabilities to develop engaging, learner-centered educational experiences.</p></BR>
+                        
+                        
+                        <h4>Technological Proficiency in Multimedia and Web-Based Instruction:</h4>
+                        <p>Developed advanced skills in multimedia instruction and web-based learning platforms, vital for the digital transformation of education.</p></BR>
+                        
+                        
+                        <h4>Leadership in Distance Education:</h4>
+                        <p>Specialized in the design and implementation of distance learning programs, preparing me to lead and innovate in this rapidly evolving field.</p></BR>
+                        
+                        
+                        <h4>Adaptability to Emerging Technologies:</h4>
+                        <p>Focused on adapting to the ever-changing technology landscape, ensuring my approaches in education remain relevant and pioneering.</p></BR>
+                        
+                        
+                        <h4>Collaborative Production and E-Learning Development:</h4>
+                        <p>Excelled in collaborative environments, combining theoretical knowledge with practical e-learning applications, underpinned by a solid foundation in learning theories and multimedia production.</p></BR>
+                        
+                        
+                        <h4>Integration of Technology in Assessment: </h4>
+                        <p>Cultivated the ability to leverage technology for effective student assessment, a crucial skill for data-driven educational decision-making.</p></BR>
+                        
+                        <p>This comprehensive education has not only honed my technical and leadership skills in educational technology but also instilled in me an innovative mindset and a commitment to lifelong learning. As an aspiring professor, I am eager to contribute my expertise and insights to shape the future of educational technology.</p>
+                        
+                       
+                        <!--
+                        <P>This program provided me with a deep dive into the world of educational technology, preparing me for a leadership role in academia. Key highlights include:</P>
+                        
+                        <h4>Comprehensive Instruction in Educational Technology</h4>
+                        <P>Gained a profound understanding of the foundational principles of educational technology, instructional design, and computer applications.</P>
+                        
+                        <h4>Expertise in Multimedia and Web-Based Instruction</h4>
+                        <P>Developed skills in creating and managing multimedia instruction and web-based educational platforms, essential for modern education.</P>
+                        
+                        <h4>Specialization in Distance Education</h4>
+                        <P> Focused on the design and production of educational software and materials, tailoring my skills for the growing field of distance learning.</P>
+                        
+                        <h4>Emerging Technologies and Adaptability</h4>
+                        <P>Keenly adapted to the ever-changing landscape of technology, ensuring my approaches and methodologies remain cutting-edge.</P>
+                        
+                        <h4>Collaborative and E-Learning Development Skills</h4>
+                        <P>Excelled in collaborative production environments and e-learning development, underpinned by solid learning theories and multimedia production techniques.</P>
+                        <P><This education has not only enhanced my technical skills but also prepared me to adapt to and lead in the dynamic field of educational technology.</P>
+                        <P></P>
+                        <P></P>
+                    -->
+                        
+                        
+					</div>
+				</div>
+			</article>
+			<article class="timeline-entry">
+				<div class="timeline-entry-inner">
+					<div class="timeline-icon bg-info">
+						<i class="entypo-location"></i>
+					</div>
+					<div class="timeline-label">
+						<h3 class="resume-title">BACHELOR OF SCIENCE IN GRAPHIC DESIGN - 2001</h3>
+						<h4 class="resume-title">California State University, Sacramento </h4>
+                        <!--
+						<p>The program of study is a layered exploration that starts with fundamental principles of visual communication paired with an intensive introduction to the creative process. Exposure to multiple facets of two and three-dimensional design opens up the students’ ability to engage in interdisciplinary work. Each successive layer builds in complexity to encompass technical, conceptual, and research challenges that run concurrently with a series of classes devoted to professional practice.</p>
+                        -->
+                        <p>This comprehensive graphic design program provided a rich and layered educational experience, beginning with the foundational principles of visual communication and an intensive introduction to the creative process. Key achievements and learning areas include:</p></BR>
+                        
+                        
+                        <h4>Fundamentals of Visual Communication: </h4>
+                        <p>Gained a strong understanding of the core principles of visual communication, learning how to effectively convey messages and concepts through design.</p></BR>
+                        
+                        
+                        <h4>Creative Process Mastery:</h4>
+                        <p>Developed proficiency in the creative process, honing my ability to conceptualize, develop, and execute compelling design projects.</p></BR>
+                        
+                        
+                        <h4>Multidisciplinary Design Skills:</h4>
+                        <p>Acquired the ability to engage in interdisciplinary work, exploring and integrating various facets of two and three-dimensional design.</p></BR>
+                        
+                        
+                        <h4>Technical and Conceptual Development:</h4>
+                        <p>Specialized in the design and implementation of distance learning programs, preparing me to lead and innovate in this rapidly evolving field.</p></BR>
+                        
+                        
+                        <h4>Adaptability to Emerging Technologies:</h4>
+                        <p>Progressively built my technical skills in design, while simultaneously enhancing my conceptual thinking abilities, enabling me to tackle complex design challenges.</p></BR>
+                        
+                        
+                        <h4>Research-Driven Design Approach:</h4>
+                        <p>Embraced a research-based methodology, ensuring my design solutions are informed, relevant, and impactful.</p></BR>
+                        
+                        
+                        <h4>Professional Practice in Graphic Design:</h4>
+                        <p>Completed a series of classes focused on professional practice, preparing me for a successful career in the graphic design industry by understanding industry standards, client relations, and project management.</p></BR>
+                        
+                        <p>This educational journey in graphic design has not only equipped me with the technical skills and conceptual understanding necessary for professional practice but also instilled a deep appreciation for interdisciplinary approaches and research-driven design solutions.</p>
+                        
+					</div>
+				</div>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+<!--/end section education -->
 
-	</body>
+<!--Footer-->
+<footer class="footer_wrapper" id="contact">
+  <div class="container">
+    <section class="page_section contact" id="contact">
+      <div class="contact_section">
+        <h2>Contact Maggie</h2>
+	<h6></h6>
+     
+      </div>
+      <div class="row">
+        <div class="col-lg-4 wow fadeInLeft">	
+		 <div class="contact_info">
+                           
+                            <div class="detail">
+                                <h4>Call Maggie</h4>
+                                <p>267 481 2199</p>
+                            </div>  
+                            <div class="detail">
+                                <h4>Email Maggie</h4>
+                                <p><a href="mailto:Maggie.n.ms@icloud.com">Maggie.Nguyen@Temple.edu</a></p>
+                            </div> 
+                        </div>
+       		  
+			  
+          
+          <ul class="social_links">
+            <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+            <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+            <li class="pinterest animated bounceIn wow delay-04s"><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>
+    
+          </ul>
+        </div>
+        <div class="col-lg-8 wow fadeInLeft delay-03s">
+          <div class="form">
+            <input class="input-text" type="text" name="" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+            <input class="input-text" type="text" name="" value="Your E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+            <textarea class="input-text text-area" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
+            <input class="input-btn" type="submit" value="send message">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <div class="footer_bottom"><span>Copyright © reserved,</span> </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.nav.js"></script> 
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
+<script type="text/javascript" src="js/wow.js"></script> 
+<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
 </html>
